@@ -1,9 +1,9 @@
-using { sap.ui.riskmanagement as my } from '../db/schema';
+using { risksmanagement } from '../db/schema';
 
 @path: 'service/risk'
 service RiskService {
-  entity Risks as projection on my.Risks;
-    annotate Risks with @odata.draft.enabled;
-  entity Mitigations as projection on my.Mitigations;
-    annotate Mitigations with @odata.draft.enabled;
+  entity Risk as projection on risksmanagement.Risk;
+    annotate Risk with @odata.draft.enabled;
+  entity Mitigation as projection on risksmanagement.Mitigation;
+    annotate Mitigation with @odata.draft.enabled;
 }

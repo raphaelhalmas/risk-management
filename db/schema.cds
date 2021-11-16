@@ -1,20 +1,20 @@
-namespace sap.ui.riskmanagement;
+namespace risksmanagement;
 using { managed } from '@sap/cds/common';
 
-  entity Risks : managed {
-    key ID      : UUID  @(Core.Computed : true);
-    title       : String(100);
-    prio        : String(5);
-    descr       : String;
-    miti        : Association to Mitigations;
-    impact      : Integer;
+  entity Risk : managed {
+    key ID : UUID  @(Core.Computed : true);
+    title : String(100);
+    priority : String(5);
+    description : String;
+    mitigation : Association to Mitigation;
+    impact : Integer;
     criticality : Integer;
   }
 
-  entity Mitigations : managed {
-    key ID       : UUID  @(Core.Computed : true);
-    description  : String;
-    owner        : String;
-    timeline     : String;
-    risks        : Association to many Risks on risks.miti = $self;
+  entity Mitigation : managed {
+    key ID : UUID  @(Core.Computed : true);
+    description : String;
+    owner : String;
+    timeline : String;
+    risks : Association to many Risk on risks.mitigation = $self;
   }
