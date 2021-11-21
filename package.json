@@ -1,7 +1,7 @@
 {
   "name": "risks-management-service",
   "version": "1.0.0",
-  "description": "A simple CAP project.",
+  "description": "Tutorial idealizado para estudo relacionado à criação de uma aplicação Fiori para gerenciamento de riscos utilizando SAP Cloud Application Programming Model (CAP) e Node.js",
   "repository": "<Add your repository here>",
   "license": "UNLICENSED",
   "private": true,
@@ -14,7 +14,7 @@
     "sqlite3": "^4.2.0"
   },
   "scripts": {
-    "start": "cds run",
+    "start": "npm i -g @sap/cds-dk && npm install && npm audit fix --force && cds watch",
     "watch-risks-maintenance": "cds watch --open risks-maintenance/webapp/index.html#fe-lrop-v4"
   },
   "eslintConfig": {
