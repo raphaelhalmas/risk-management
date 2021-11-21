@@ -1,0 +1,1 @@
+/api/* https://risks-management-service.herokuapp.com/service/risk/:splat 200
