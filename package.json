@@ -1,7 +1,7 @@
 {
   "name": "risks-management-service",
   "version": "1.0.0",
-  "description": "Tutorial idealizado para estudo relacionado à criação de uma aplicação Fiori para gerenciamento de riscos utilizando SAP Cloud Application Programming Model (CAP) e Node.js",
+  "description": "Projeto para estudo relacionado à criação de um serviço OData para gerenciamento de riscos utilizando SAP Cloud Application Programming Model (CAP) e Node.js",
   "repository": "<Add your repository here>",
   "license": "UNLICENSED",
   "private": true,
@@ -14,8 +14,7 @@
     "sqlite3": "^4.2.0"
   },
   "scripts": {
-    "start": "npm i -g @sap/cds-dk && npm install && npm audit fix --force && cds watch",
-    "watch-risks-maintenance": "cds watch --open risks-maintenance/webapp/index.html#fe-lrop-v4"
+    "start": "npm i -g @sap/cds-dk && npm install && npm audit fix --force && cds deploy --to sqlite && cds run"
   },
   "eslintConfig": {
     "extends": "eslint:recommended",
@@ -44,5 +43,15 @@
   },
   "sapux": [
     "app/risks-maintenance"
-  ]
+  ],
+  "cds": {
+    "requires": {
+      "db": {
+        "kind": "sqlite",
+        "credentials": {
+          "database": "sqlite.db"
+        }
+      }
+    }
+  }
 }
