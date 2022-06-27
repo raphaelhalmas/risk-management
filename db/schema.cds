@@ -1,4 +1,4 @@
-namespace risksmanagement;
+namespace riskmanagement;
 using { managed } from '@sap/cds/common';
 
   entity Risk : managed {

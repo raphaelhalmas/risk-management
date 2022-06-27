@@ -91,3 +91,22 @@ annotate RiskService.Risk with {
 		}
 	);
 }
+
+annotate RiskService.Mitigation with @(
+	UI: {
+		HeaderInfo: {
+			TypeName: 'Mitigation',
+			TypeNamePlural: 'Mitigations',
+			Title          : {
+                $Type : 'UI.DataField',
+                Value : description
+            }
+		},
+		LineItem: [
+			{Value: description}
+		]
+	}
+) 
+{
+
+};
