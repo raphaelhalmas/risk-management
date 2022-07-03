@@ -1,7 +1,7 @@
 {
-  "name": "risk-management-service",
+  "name": "risk-management",
   "version": "1.0.0",
-  "description": "Projeto para estudo relacionado à criação de um serviço OData para gerenciamento de riscos utilizando SAP Cloud Application Programming Model (CAP) e Node.js",
+  "description": "Projeto para estudo relacionado à criação de uma aplicação para gerenciamento de riscos utilizando SAP Cloud Application Programming Model (CAP) e Node.js",
   "repository": "<Add your repository here>",
   "license": "UNLICENSED",
   "private": true,
