@@ -10,11 +10,10 @@
     "express": "^4"
   },
   "devDependencies": {
-    "@sap/ux-specification": "^1.90.14",
-    "sqlite3": "^4.2.0"
+    "sqlite3": "^5.0.2"
   },
   "scripts": {
-    "start": "npm i -g @sap/cds-dk && npm install && npm audit fix --force && cds deploy --to sqlite && cds run"
+    "start": "cds run"
   },
   "eslintConfig": {
     "extends": "eslint:recommended",
@@ -41,15 +40,19 @@
       "require-atomic-updates": "off"
     }
   },
-  "sapux": [
-    "app/risk-maintenance"
-  ],
   "cds": {
     "requires": {
       "db": {
         "kind": "sqlite",
         "credentials": {
           "database": "sqlite.db"
+        }
+      },
+      "API_BUSINESS_PARTNER": {
+        "kind": "odata-v2",
+        "model": "srv\\external\\API_BUSINESS_PARTNER",
+        "credentials": {
+          "url": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/"
         }
       }
     }

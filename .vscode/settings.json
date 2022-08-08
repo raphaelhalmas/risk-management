@@ -3,5 +3,13 @@
     "**/.gitignore": true,
     "**/.git": true,
     "**/.vscode": true
-  }
+  },
+  "sqltools.connections": [
+    {
+      "previewLimit": 50,
+      "driver": "SQLite",
+      "name": "RISKS",
+      "database": "sqlite.db"
+    }
+  ]
 }

@@ -1,4 +1,4 @@
-ID,title,priority,description,mitigation_id,impact
-20466922-7d57-4e76-b14c-e53fd97dcb11,CFR non-compliance,3,Recent restructuring might violate CFR code 71,20466921-7d57-4e76-b14c-e53fd97dcb11,10000
-20466922-7d57-4e76-b14c-e53fd97dcb12,SLA violation with possible termination cause,2,Repeated SAL violation on service delivery for two successive quarters,20466921-7d57-4e76-b14c-e53fd97dcb12,90000
-20466922-7d57-4e76-b14c-e53fd97dcb13,Shipment violating export control,1,Violation of export and trade control with unauthorized downloads,20466921-7d57-4e76-b14c-e53fd97dcb13,200000
+ID,title,bp_id,priority,description,mitigation_id,impact
+20466922-7d57-4e76-b14c-e53fd97dcb11,CFR non-compliance,9980001834,3,Recent restructuring might violate CFR code 71,20466921-7d57-4e76-b14c-e53fd97dcb11,10000
+20466922-7d57-4e76-b14c-e53fd97dcb12,SLA violation with possible termination cause,1000247,2,Repeated SAL violation on service delivery for two successive quarters,20466921-7d57-4e76-b14c-e53fd97dcb12,90000
+20466922-7d57-4e76-b14c-e53fd97dcb13,Shipment violating export control,1000264,1,Violation of export and trade control with unauthorized downloads,20466921-7d57-4e76-b14c-e53fd97dcb13,200000
